@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+                
+    <title>Login</title>
+    //<link rel="stylesheet" href="weatherReportAss.css">
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 50fr 50fr;
+            grid-template-rows: 100fr; 
+        }
+        #logo_img{
+           margin-top:74px;
+           margin-left: 170px;
+        }
+        #login_section{
+            height: 480px;
+            width: 480px;
+            margin-left: 0px;
+            margin-top: 90px;
+            background-color: #ffffff;
+        }
+        #login_details{
+            height: 380px;
+            padding-top: 25px;
+            padding-left: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #login_heading{
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;                                                                                  
+        }
+        .login_input_box{
+            border: 2px solid;
+            width: 372px;
+            height: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        #password_box{
+            margin-top: 25px;
+        }
+        #login_btn{
+            width: 383px;
+            background-color: #ff914d;
+            border-color: #ff914d;
+            color: white;
+            font-family: 'Poppins', sans-serif;    
+        }
+        #terms_polices{
+            margin-top: 15px;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #not_registerd{
+            color: #ffffff;
+            margin-left: 165px;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #signup{
+            color: #ffffff;
+        }
+
+        @media only screen and (max-width : 500px)  {
+            *{
+                margin: 0px;
+            }
+            .container{
+                width: 390px;
+                display: grid;
+                height: 100vh;
+                grid-template-columns: 100fr;
+                grid-template-rows: 15fr 85fr;
+            }
+            #logo_img{
+                margin-top: -59px;
+                margin-left: 9%;
+                width: 270px;
+                height: 270px;
+            }
+            #login_section{
+                height: 362px;
+                width: 315px;
+                margin-left: 41px;
+                margin-top: -5px;
+            }
+            .login_input_box{
+                border: 2px solid;
+                width: 230px;
+                height: 35px;
+                padding-left: 5px;
+                font-size: 19px;
+            }
+            #login_details{
+                height: 250px;
+                padding-top: 25px;
+                padding-left: 33px;   
+            }
+            #login_heading{
+                font-size: 30px;
+                font-weight: 700;                                                                                  
+            }
+            #login_btn{
+                width: 236px;
+                height: 40px;
+            }
+            #password_box{
+                margin-top: 20px;
+            }
+            #terms_polices{
+                margin-top: 22px;
+                font-size: 14px;
+            }
+            #not_registerd{
+                margin-left: 125px;
+                margin-top: 10px;
+                font-size: 13px;
+            }
+            #login{
+                margin-left: -3px;
+            }
+       
+        }
+    </style>
+</head>
+<body style="background-color: #242424;">
+    <div class="container">
+        <div id="logo">
+           <img src="logo.png" alt="logo" id="logo_img" height="450px" width="450px">
+           
+        </div>
+        <div id="login">
+            <div id = "login_section">
+                <div id="login_details"> 
+                    <div><h1 id="login_heading" >LOGIN</h1></div>
+                             <div>
+                                <div><input type="text" placeholder="Email ID" class="login_input_box"></div>
+                                <div><input type="password" placeholder="Password" class="login_input_box" id="password_box"></div>
+                             </div>
+                    <div><input type="button" value="LOGIN" class="login_input_box" id = "login_btn"></div>
+                </div>
+                <div id="terms_polices">
+                    <center>
+                            <p>By registering, You agree to the <br> 
+                                Terms,Conditions and Policies of Webla & Privacy Policy
+                            </p>
+                    </center>
+
+                </div>
+
+                
+                
+            </div>
+            <div >
+                
+                <p id="not_registerd">Not registered?<a href="" id="signup">Signup</a></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

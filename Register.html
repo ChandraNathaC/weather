@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+                
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 50fr 50fr;
+            grid-template-rows: 100fr; 
+           
+        }
+        #logo_img{
+           margin-top:74px;
+           margin-left: 170px;
+        }
+        #reg_section{
+            height: 480px;
+            width: 480px;
+            margin-left: 0px;
+            margin-top: 90px;
+            background-color: #ffffff;
+        }
+        #reg_details{
+            height: 386px;
+            padding-top: 25px;
+            padding-left: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .reg_input_box{
+            border: 2px solid;
+            width: 372px;
+            height: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             padding-left: 10px;
+             font-size: 20px;
+             margin-top: 25px;
+        }
+        
+        #reg_heading{
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+                                                                                           
+        }
+        #signup_btn{
+            width: 383px;
+            background-color: #ff914d;
+            border-color: #ff914d;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            
+        }
+        .pass{
+            /* margin-top: 25px; */
+        }
+        #terms{
+            margin-top: 15px;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #no-sign{
+          
+            color: #ffffff;
+            margin-left: 155px;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #log{
+            color: #ffffff;
+        }
+
+        @media only screen and (max-width : 500px)  {
+            *{
+                margin: 0px;
+            }
+            .container{
+                display: grid;
+                height: 100vh;
+                grid-template-columns: 100fr;
+                grid-template-rows: 15fr 85fr;
+            }
+            #logo_img{
+                margin-top: -59px;
+                margin-left: 9%;
+                width: 262px;
+                height: 262px;
+            }
+            #reg_section{
+                height: 430px;
+                width: 315px;
+                margin-left: 31px;
+                margin-top: -23px;
+            }
+            #reg_details{
+                height: 250px;
+                padding-top: 15px;
+                padding-left: 33px;
+            }
+            .reg_input_box{
+                border: 2px solid;
+                width: 230px;
+                height: 35px;
+                padding-left: 5px;
+                font-size: 15px;
+            }
+            
+            #reg_heading{
+                font-size: 30px;
+                font-weight: 700;
+                }
+            #signup_btn{
+                width: 236px;
+                height: 40px;
+                }
+            .pass{
+                margin-top: 20px;
+            }
+            #terms{
+                margin-top: 101px;
+                font-size: 14px;
+            }
+            #no-sign{
+                margin-left: 125px;
+                margin-top: 10px;
+                font-size: 13px;
+            }
+       
+        }
+
+
+    </style>
+</head>
+<body style="background-color: #242424;">
+    <div class="container">
+        <div id="logo">
+           <img src="logo.png" alt="logo" id="logo_img" height="450px" width="450px">
+           
+        </div>
+        <div id="login">
+            
+            <div id = "reg_section">
+                <div id="reg_details">
+                    
+                    <div><h1 id="reg_heading">REGISTER</h1></div>
+                             <div>
+                                <div><input type="email" placeholder="Email ID" class="reg_input_box pass"></div>
+                                <div><input type="number" placeholder="Phone Number" class="reg_input_box pass"></div>
+                                <div><input type="password" placeholder="Password" class="reg_input_box pass" ></div>
+                                <div><input type="password" placeholder="Confirm Password" class="reg_input_box pass" id="pass"></div>
+                             </div>
+                    <div><input type="button" value="SIGN UP" class="reg_input_box" id = "signup_btn"></div>
+                </div>
+                <div id="terms">
+                    <center>
+                            <p>By registering, You agree to the <br> 
+                                Terms,Conditions and Policies of Webla & Privacy Policy
+                            </p>
+                    </center>
+
+                </div>
+
+                
+                
+            </div>
+            <div >
+                
+                <p id="no-sign">Have an account?<a href="" id="log">Log in</a></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
